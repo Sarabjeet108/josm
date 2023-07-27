@@ -719,7 +719,7 @@ public class TagChecker extends TagTest implements TaggingPresetListener {
                             isInRegion = true;
                         }
                     }
-                    if (isInRegion==preset.exclude_regions()) {
+                    if (isInRegion == preset.exclude_regions()) {
                         errors.add(TestError.builder(this, Severity.WARNING, INVALID_REGION)
                                 .message(tr("Preset not valid for region"),
                                         marktr("Preset {0} should not be applied in this region"),
